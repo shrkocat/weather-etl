@@ -1,5 +1,4 @@
 import pandas as pd
-import pytest
 
 from src.transform import transform, flatten_record
 
