@@ -1,0 +1,37 @@
+# Non-secret configuration.
+# Secrets (DB password, API keys if needed) live in .env, never here.
+
+api:
+  base_url: "https://api.open-meteo.com/v1/forecast"
+  timeout_seconds: 15
+  max_retries: 3
+  retry_backoff_seconds: 2
+
+# Add more locations as needed. The ETL pipeline will fetch weather data for each location.
+locations:
+  - name: "Manila"
+    latitude: 14.5995
+    longitude: 120.9842
+  - name: "New York"
+    latitude: 40.7128
+    longitude: -74.0060
+  - name: "London"
+    latitude: 51.5074
+    longitude: -0.1278
+
+pipeline:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  timezone: "UTC"
+
+validation:
+  temperature_min_celsius: -90
+  temperature_max_celsius: 60
+  humidity_min_pct: 0
+  humidity_max_pct: 100
+  max_allowed_null_pct: 0.05
+
+database:
+  # Actual host/user/password come from .env. This just controls behavior.
+  table_name: "weather_observations"
+  echo_sql: false
