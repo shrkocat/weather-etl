@@ -18,7 +18,19 @@ locations:
   - name: "London"
     latitude: 51.5074
     longitude: -0.1278
-
+  - name: "Tokyo"
+    latitude: 35.6895
+    longitude: 139.6917
+  - name: "Sydney"
+    latitude: -33.8688
+    longitude: 151.2093
+  - name: "Cairo"
+    latitude: 30.0444
+    longitude: 31.2357
+  - name: "Rio de Janeiro"
+    latitude: -22.9068
+    longitude: -43.1729
+    
 pipeline:
   raw_data_dir: "data/raw"
   processed_data_dir: "data/processed"
