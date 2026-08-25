@@ -1,3 +1,16 @@
+<div align="center">
+
+# Automated Weather Data ETL
+### Automated ETL pipeline using Python, PostgreSQL, and Bash for reliable weather data collection and analysi
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+
+</div>
+
+---
+
 # Weather ETL Pipeline
 
 A daily ETL pipeline that fetches weather data for multiple cities from
